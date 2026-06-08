@@ -79,8 +79,8 @@ HAVING Maximum_sale > 1000;
 -- Show the top 3 categories by average sales value, excluding customers under 25.
 
 SELECT `Product Category`,
-        AVG(`Total Amount`) AS Average_sales
+        AVG(`Total Amount`) AS Average_sale
 FROM retail_sales_dataset
 GROUP BY `Product Category`
-HAVING Average_sales < 25;
+HAVING Average_sale < 25;
 
